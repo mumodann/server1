@@ -1,0 +1,92 @@
+[debug] [2023-02-06T23:36:01.314Z] ----------------------------------------------------------------------
+[debug] [2023-02-06T23:36:01.316Z] Command:       /home/mumo/.nvm/versions/node/v16.19.0/bin/node /home/mumo/.nvm/versions/node/v16.19.0/bin/firebase serve
+[debug] [2023-02-06T23:36:01.317Z] CLI Version:   11.22.0
+[debug] [2023-02-06T23:36:01.317Z] Platform:      linux
+[debug] [2023-02-06T23:36:01.317Z] Node Version:  v16.19.0
+[debug] [2023-02-06T23:36:01.318Z] Time:          Tue Feb 07 2023 02:36:01 GMT+0300 (East Africa Time)
+[debug] [2023-02-06T23:36:01.318Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-06T23:36:01.419Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-06T23:36:01.420Z] > authorizing via signed-in user (m.danmuoki@gmail.com)
+[debug] [2023-02-06T23:36:01.420Z] [iam] checking project deploy-86609 for permissions ["firebase.projects.get"]
+[debug] [2023-02-06T23:36:01.421Z] > refreshing access token with scopes: []
+[debug] [2023-02-06T23:36:01.423Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-02-06T23:36:01.423Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-02-06T23:36:02.396Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-02-06T23:36:02.396Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-02-06T23:36:02.403Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/deploy-86609:testIamPermissions [none]
+[debug] [2023-02-06T23:36:02.404Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/deploy-86609:testIamPermissions x-goog-quota-user=projects/deploy-86609
+[debug] [2023-02-06T23:36:02.404Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/deploy-86609:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-02-06T23:36:04.641Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/deploy-86609:testIamPermissions 200
+[debug] [2023-02-06T23:36:04.641Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/deploy-86609:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-02-06T23:36:04.643Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/deploy-86609 [none]
+[debug] [2023-02-06T23:36:06.177Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/deploy-86609 200
+[debug] [2023-02-06T23:36:06.177Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/deploy-86609 {"projectId":"deploy-86609","projectNumber":"527403633365","displayName":"deploy","name":"projects/deploy-86609","resources":{"hostingSite":"deploy-86609"},"state":"ACTIVE","etag":"1_88be2750-9647-4295-8a93-7f984d633deb"}
+[info] 
+[info] === Serving from '/home/mumo/Pictures/site (copy)/front'...
+[info] 
+[debug] [2023-02-06T23:36:06.182Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/deploy-86609/sites 
+[debug] [2023-02-06T23:36:08.634Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/deploy-86609/sites 200
+[debug] [2023-02-06T23:36:08.634Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/deploy-86609/sites {"sites":[{"name":"projects/deploy-86609/sites/deploy-86609","defaultUrl":"https://deploy-86609.web.app","appId":"1:527403633365:web:e652e3324d8d3a5911b05c","type":"DEFAULT_SITE"}]}
+[debug] [2023-02-06T23:36:08.634Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/deploy-86609/webApps/1:527403633365:web:e652e3324d8d3a5911b05c/config [none]
+[debug] [2023-02-06T23:36:10.375Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/deploy-86609/webApps/1:527403633365:web:e652e3324d8d3a5911b05c/config 200
+[debug] [2023-02-06T23:36:10.375Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/deploy-86609/webApps/1:527403633365:web:e652e3324d8d3a5911b05c/config {"projectId":"deploy-86609","appId":"1:527403633365:web:e652e3324d8d3a5911b05c","storageBucket":"deploy-86609.appspot.com","apiKey":"AIzaSyBq6QlDyhVOv-U8x3Wu7EdfkMcLgw7VsQc","authDomain":"deploy-86609.firebaseapp.com","messagingSenderId":"527403633365","measurementId":"G-VHC1144C8M"}
+[debug] [2023-02-06T23:36:10.380Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/deploy-86609 [none]
+[debug] [2023-02-06T23:36:11.605Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/deploy-86609 200
+[debug] [2023-02-06T23:36:11.605Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/deploy-86609 {"projectId":"deploy-86609","projectNumber":"527403633365","displayName":"deploy","name":"projects/deploy-86609","resources":{"hostingSite":"deploy-86609"},"state":"ACTIVE","etag":"1_88be2750-9647-4295-8a93-7f984d633deb"}
+[info] i  hosting[deploy-86609]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[deploy-86609]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [06/Feb/2023:23:39:10 +0000] "GET / HTTP/1.1" 200 895 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Feb/2023:23:39:10 +0000] \"GET / HTTP/1.1\" 200 895 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [06/Feb/2023:23:39:11 +0000] "GET /favicon.ico HTTP/1.1" 404 - "http://localhost:5000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Feb/2023:23:39:11 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"http://localhost:5000/\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [06/Feb/2023:23:39:15 +0000] "GET / HTTP/1.1" 200 895 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Feb/2023:23:39:15 +0000] \"GET / HTTP/1.1\" 200 895 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [06/Feb/2023:23:40:18 +0000] "GET / HTTP/1.1" 200 895 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Feb/2023:23:40:18 +0000] \"GET / HTTP/1.1\" 200 895 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [06/Feb/2023:23:40:20 +0000] "GET / HTTP/1.1" 200 895 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Feb/2023:23:40:20 +0000] \"GET / HTTP/1.1\" 200 895 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\""}}
+[info] Shutting down...
+[debug] [2023-02-06T23:40:29.582Z] Error: Timed out.
+    at Timeout._onTimeout (/home/mumo/.nvm/versions/node/v16.19.0/lib/node_modules/firebase-tools/lib/utils.js:253:49)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-02-06T23:40:41.994Z] ----------------------------------------------------------------------
+[debug] [2023-02-06T23:40:41.997Z] Command:       /home/mumo/.nvm/versions/node/v16.19.0/bin/node /home/mumo/.nvm/versions/node/v16.19.0/bin/firebase serve
+[debug] [2023-02-06T23:40:41.997Z] CLI Version:   11.22.0
+[debug] [2023-02-06T23:40:41.997Z] Platform:      linux
+[debug] [2023-02-06T23:40:41.998Z] Node Version:  v16.19.0
+[debug] [2023-02-06T23:40:41.998Z] Time:          Tue Feb 07 2023 02:40:41 GMT+0300 (East Africa Time)
+[debug] [2023-02-06T23:40:41.998Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-06T23:40:42.095Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-06T23:40:42.095Z] > authorizing via signed-in user (m.danmuoki@gmail.com)
+[debug] [2023-02-06T23:40:42.096Z] [iam] checking project deploy-86609 for permissions ["firebase.projects.get"]
+[debug] [2023-02-06T23:40:42.098Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/deploy-86609:testIamPermissions [none]
+[debug] [2023-02-06T23:40:42.098Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/deploy-86609:testIamPermissions x-goog-quota-user=projects/deploy-86609
+[debug] [2023-02-06T23:40:42.098Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/deploy-86609:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-02-06T23:40:43.888Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/deploy-86609:testIamPermissions 200
+[debug] [2023-02-06T23:40:43.888Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/deploy-86609:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-02-06T23:40:43.890Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/deploy-86609 [none]
+[debug] [2023-02-06T23:40:45.214Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/deploy-86609 200
+[debug] [2023-02-06T23:40:45.215Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/deploy-86609 {"projectId":"deploy-86609","projectNumber":"527403633365","displayName":"deploy","name":"projects/deploy-86609","resources":{"hostingSite":"deploy-86609"},"state":"ACTIVE","etag":"1_88be2750-9647-4295-8a93-7f984d633deb"}
+[info] 
+[info] === Serving from '/home/mumo/Pictures/site (copy)/front'...
+[info] 
+[debug] [2023-02-06T23:40:45.226Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/deploy-86609/sites 
+[debug] [2023-02-06T23:40:47.057Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/deploy-86609/sites 200
+[debug] [2023-02-06T23:40:47.057Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/deploy-86609/sites {"sites":[{"name":"projects/deploy-86609/sites/deploy-86609","defaultUrl":"https://deploy-86609.web.app","appId":"1:527403633365:web:e652e3324d8d3a5911b05c","type":"DEFAULT_SITE"}]}
+[debug] [2023-02-06T23:40:47.058Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/deploy-86609/webApps/1:527403633365:web:e652e3324d8d3a5911b05c/config [none]
+[debug] [2023-02-06T23:40:49.720Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/deploy-86609/webApps/1:527403633365:web:e652e3324d8d3a5911b05c/config 200
+[debug] [2023-02-06T23:40:49.720Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/deploy-86609/webApps/1:527403633365:web:e652e3324d8d3a5911b05c/config {"projectId":"deploy-86609","appId":"1:527403633365:web:e652e3324d8d3a5911b05c","storageBucket":"deploy-86609.appspot.com","apiKey":"AIzaSyBq6QlDyhVOv-U8x3Wu7EdfkMcLgw7VsQc","authDomain":"deploy-86609.firebaseapp.com","messagingSenderId":"527403633365","measurementId":"G-VHC1144C8M"}
+[debug] [2023-02-06T23:40:49.727Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/deploy-86609 [none]
+[debug] [2023-02-06T23:40:51.053Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/deploy-86609 200
+[debug] [2023-02-06T23:40:51.053Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/deploy-86609 {"projectId":"deploy-86609","projectNumber":"527403633365","displayName":"deploy","name":"projects/deploy-86609","resources":{"hostingSite":"deploy-86609"},"state":"ACTIVE","etag":"1_88be2750-9647-4295-8a93-7f984d633deb"}
+[info] i  hosting[deploy-86609]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[deploy-86609]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [06/Feb/2023:23:40:59 +0000] "GET / HTTP/1.1" 200 895 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Feb/2023:23:40:59 +0000] \"GET / HTTP/1.1\" 200 895 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\""}}
+[info] Shutting down...
+[info] Shutting down...
+[debug] [2023-02-06T23:41:21.945Z] Error: Timed out.
+    at Timeout._onTimeout (/home/mumo/.nvm/versions/node/v16.19.0/lib/node_modules/firebase-tools/lib/utils.js:253:49)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[error] 
+[error] Error: An unexpected error has occurred.
